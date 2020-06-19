@@ -14,4 +14,5 @@ clean:
 test:
 	go test
 deploy: clean build
-	serverless deploy --verbose --force
+    export AWS_PROFILE=univrs
+	AWS_PROFILE=univrs serverless deploy --verbose --force
